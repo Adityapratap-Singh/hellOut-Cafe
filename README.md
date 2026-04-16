@@ -97,7 +97,7 @@ hellout_reviews_stack_2  →  ...ongoing
 - 📞 [+91 77588 43586](tel:7758843586)
 - 🛵 [Order on Swiggy](https://www.swiggy.com/menu/1256969?source=sharing)
 - 🍽️ [Order on Zomato](https://zomato.onelink.me/xqzv/1r7y80zx)
-- 🕐 Open Daily: 11:00 AM – 10:30 PM
+- 🕐 Open Daily: 3:00 PM – 9:30 PM
 
 ---
 
