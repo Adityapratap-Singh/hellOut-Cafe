@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hell Out Cafe | Charcoal Baked Pizza & More | Chakan, Pune</title>
+  <meta name="description" content="Hell Out Cafe serves fire-charcoal baked pizzas, gourmet burgers, rolls, sandwiches, subs, coffee and cold drinks at Chakan, Maharashtra. Experience the taste of fire." />
+  <meta name="keywords" content="Hell Out Cafe, charcoal pizza, pizza Chakan, cafe Chakan, pizza Pune, burger Chakan, coffee Chakan" />
+  <meta property="og:title" content="Hell Out Cafe | Charcoal Baked Pizza" />
+  <meta property="og:description" content="Experience fire-kissed flavors at Chakan's most unique cafe." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+
+<!-- Page Transition Overlay -->
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-flames">
+    <div class="loader-flame"></div>
+    <div class="loader-flame"></div>
+    <div class="loader-flame"></div>
+    <div class="loader-flame"></div>
+    <div class="loader-flame"></div>
+  </div>
+  <div class="loader-brand">HELL OUT</div>
+  <div class="loader-tagline">Charcoal Baked Pizza &bull; Chakan</div>
+</div>
+
+<div class="page-transition" id="pageTransition"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Hell Out Cafe Logo" />
+    <div class="nav-logo-text">
+      <span class="brand">Hell Out</span>
+      <span class="tagline">Charcoal Baked Pizza</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><div class="nav-order-pills">
+      <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="nav-pill-swiggy">🛵 Swiggy</a>
+      <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="nav-pill-zomato">🍽 Zomato</a>
+    </div></li>
+    <li><a href="tel:7758843586" class="nav-cta">📞 Order Now</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles"></div>
+
+  <div class="hero-content">
+    <span class="hero-badge">🔥 Chakan's Finest Cafe Experience</span>
+    <h1 class="hero-title">Hell Out</h1>
+    <p class="hero-subtitle">Charcoal Baked Pizza &amp; More</p>
+    <p class="hero-desc">
+      Taste the fire. Every pizza is slow-baked over real charcoal, crafting bold, smoky flavours that set us apart. Located in Sara City, Chakan.
+    </p>
+    <div class="hero-buttons">
+      <a href="menu.html" class="btn-primary">🍕 Explore Menu</a>
+      <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="btn-swiggy">🛵 Order on Swiggy</a>
+      <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="btn-zomato">🍽 Order on Zomato</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num">40+</span>
+      <span class="stat-label">Menu Items</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Charcoal Baked</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">5★</span>
+      <span class="stat-label">Local Reviews</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">2</span>
+      <span class="stat-label">Years Strong</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ORDER STRIP ===== -->
+<div class="order-strip">
+  <span class="order-strip-label">🔥 Order Online Now</span>
+  <div class="order-strip-divider"></div>
+  <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="btn-swiggy">🛵 Order on Swiggy</a>
+  <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="btn-zomato">🍽 Order on Zomato</a>
+</div>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="featured-cats">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">What We Serve</span>
+    <h2 class="section-title">Everything You <span>Crave</span></h2>
+    <p class="section-desc">From charcoal-fired pizzas to refreshing cold drinks, we've got something fiery for everyone.</p>
+  </div>
+
+  <div class="cats-grid">
+    <a href="menu.html#pizzas" class="cat-card reveal reveal-delay-1" style="text-decoration:none;">
+      <img src="images/hero_pizza.png" alt="Pizzas" />
+      <div class="cat-card-overlay">
+        <div class="cat-icon">🍕</div>
+        <div class="cat-name">Pizzas</div>
+        <div class="cat-count">7 varieties · Small & Large</div>
+      </div>
+    </a>
+
+    <a href="menu.html#burgers" class="cat-card reveal reveal-delay-2" style="text-decoration:none;">
+      <img src="images/burger.png" alt="Burgers" />
+      <div class="cat-card-overlay">
+        <div class="cat-icon">🍔</div>
+        <div class="cat-name">Burgers</div>
+        <div class="cat-count">6 options · Veg & Non-Veg</div>
+      </div>
+    </a>
+
+    <a href="menu.html#coffee" class="cat-card reveal reveal-delay-3" style="text-decoration:none;">
+      <img src="images/coffee.png" alt="Coffee & Drinks" />
+      <div class="cat-card-overlay">
+        <div class="cat-icon">☕</div>
+        <div class="cat-name">Coffee & Drinks</div>
+        <div class="cat-count">Hot & Cold · from ₹20</div>
+      </div>
+    </a>
+
+    <a href="menu.html#rolls" class="cat-card reveal reveal-delay-4" style="text-decoration:none;">
+      <img src="images/charcoal_oven.png" alt="Rolls & Sandwiches" />
+      <div class="cat-card-overlay">
+        <div class="cat-icon">🌯</div>
+        <div class="cat-name">Rolls & Subs</div>
+        <div class="cat-count">Wraps, Subs & Sandwiches</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== ABOUT PREVIEW ===== -->
+<div class="about-preview reveal">
+  <div class="about-img-wrap">
+    <img src="images/charcoal_oven.png" alt="Charcoal Oven at Hell Out Cafe" loading="lazy" />
+    <div class="about-img-badge">
+      <strong>100%</strong>
+      Charcoal<br/>Baked
+    </div>
+  </div>
+  <div class="about-content">
+    <span class="section-eyebrow">Our Story</span>
+    <h2 class="section-title">Born From <span>Fire</span></h2>
+    <p>
+      Hell Out Cafe was born from a passion for authentic charcoal-baked flavors in the heart of Chakan, Maharashtra. We believe great food is made with fire, grit, and soul.
+    </p>
+    <p>
+      Every pizza that leaves our kitchen has been kissed by real charcoal flames — giving you that unmistakable smoky crust that you simply cannot get from a conventional oven.
+    </p>
+    <div class="about-features">
+      <div class="about-feature">
+        <div class="feat-icon">🔥</div>
+        <div class="feat-text">Real Charcoal Baking</div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">🧀</div>
+        <div class="feat-text">Premium Ingredients</div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">🍃</div>
+        <div class="feat-text">Fresh Daily Prep</div>
+      </div>
+      <div class="about-feature">
+        <div class="feat-icon">❤️</div>
+        <div class="feat-text">Made with Passion</div>
+      </div>
+    </div>
+    <a href="about.html" class="btn-primary" style="display:inline-flex;">Discover Our Story →</a>
+  </div>
+</div>
+
+<!-- ===== SPECIALS ===== -->
+<section class="specials">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Fan Favourites</span>
+    <h2 class="section-title">Our <span>Signature</span> Picks</h2>
+    <p class="section-desc">Handpicked bestsellers loved by everyone who walks through our doors.</p>
+  </div>
+
+  <div class="specials-grid">
+    <div class="special-card reveal reveal-delay-1">
+      <div class="special-card-img">
+        <img src="images/hero_pizza.png" alt="Charcoal Baked Pizza" loading="lazy" />
+        <div class="special-card-badge">⭐ Signature</div>
+      </div>
+      <div class="special-card-body">
+        <h3>Charcoal Baked Pizza</h3>
+        <p>Slow-fired over real charcoal for a perfectly smoky, crispy crust you simply can't get anywhere else. Available in Small & Large — Veg and Non-Veg.</p>
+        <div class="special-price">
+          <span class="price-tag">₹200+</span>
+          <a href="menu.html#pizzas" class="btn-outline" style="padding:8px 18px;font-size:0.75rem;">Order →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-card reveal reveal-delay-2">
+      <div class="special-card-img">
+        <img src="images/burger.png" alt="Maha Raja Burger" loading="lazy" />
+        <div class="special-card-badge">🔥 Bestseller</div>
+      </div>
+      <div class="special-card-body">
+        <h3>Maha Raja BBQ Burger</h3>
+        <p>Our king-size non-veg burger loaded with chicken patty, double cheese, crispy veggies, and our secret BBQ sauce. Pure indulgence.</p>
+        <div class="special-price">
+          <span class="price-tag">₹250</span>
+          <a href="menu.html#burgers" class="btn-outline" style="padding:8px 18px;font-size:0.75rem;">Order →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="special-card reveal reveal-delay-3">
+      <div class="special-card-img">
+        <img src="images/coffee.png" alt="Cold Coffee" loading="lazy" />
+        <div class="special-card-badge">❄️ Must Try</div>
+      </div>
+      <div class="special-card-body">
+        <h3>Cold Coffee</h3>
+        <p>Chilled to perfection, our cold coffee is the perfect companion to a hot summer day or a lazy evening out. Silky, rich, and refreshing.</p>
+        <div class="special-price">
+          <span class="price-tag">₹70</span>
+          <a href="menu.html#drinks" class="btn-outline" style="padding:8px 18px;font-size:0.75rem;">Order →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY SCROLL ===== -->
+<section class="gallery-section">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Visual Feast</span>
+    <h2 class="section-title">From Our <span>Kitchen</span></h2>
+  </div>
+
+  <!-- Row 1 - forwards -->
+  <div class="scroll-track-wrap" style="margin-bottom:20px;">
+    <div class="scroll-track">
+      <!-- First set -->
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Charcoal Baked Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">Gourmet Burgers</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Coffee" /><div class="gallery-img-label">Coffee Selection</div></div>
+      <div class="gallery-img-item"><img src="images/cafe_interior.png" alt="Cafe" /><div class="gallery-img-label">Our Cozy Space</div></div>
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Oven" /><div class="gallery-img-label">Charcoal Oven</div></div>
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Veg Delight Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">BBQ Royal Burger</div></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Charcoal Baked Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">Gourmet Burgers</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Coffee" /><div class="gallery-img-label">Coffee Selection</div></div>
+      <div class="gallery-img-item"><img src="images/cafe_interior.png" alt="Cafe" /><div class="gallery-img-label">Our Cozy Space</div></div>
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Oven" /><div class="gallery-img-label">Charcoal Oven</div></div>
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Veg Delight Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">BBQ Royal Burger</div></div>
+    </div>
+  </div>
+
+  <!-- Row 2 - reverse -->
+  <div class="scroll-track-wrap reverse">
+    <div class="scroll-track">
+      <!-- First set -->
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Oven" /><div class="gallery-img-label">Fire &amp; Flames</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Drinks" /><div class="gallery-img-label">Hot &amp; Cold Drinks</div></div>
+      <div class="gallery-img-item"><img src="images/cafe_interior.png" alt="Interior" /><div class="gallery-img-label">Cafe Ambiance</div></div>
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Grilled Paneer Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">Double Cheese Burger</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Coffee" /><div class="gallery-img-label">Cold Coffee</div></div>
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Kitchen" /><div class="gallery-img-label">Our Kitchen</div></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Oven" /><div class="gallery-img-label">Fire &amp; Flames</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Drinks" /><div class="gallery-img-label">Hot &amp; Cold Drinks</div></div>
+      <div class="gallery-img-item"><img src="images/cafe_interior.png" alt="Interior" /><div class="gallery-img-label">Cafe Ambiance</div></div>
+      <div class="gallery-img-item"><img src="images/hero_pizza.png" alt="Pizza" /><div class="gallery-img-label">Grilled Paneer Pizza</div></div>
+      <div class="gallery-img-item"><img src="images/burger.png" alt="Burger" /><div class="gallery-img-label">Double Cheese Burger</div></div>
+      <div class="gallery-img-item"><img src="images/coffee.png" alt="Coffee" /><div class="gallery-img-label">Cold Coffee</div></div>
+      <div class="gallery-img-item"><img src="images/charcoal_oven.png" alt="Kitchen" /><div class="gallery-img-label">Our Kitchen</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS SECTION ===== -->
+
+<!-- Part 1: Center-active carousel -->
+<section class="reviews-section">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Community Love</span>
+    <h2 class="section-title">What People <span>Say</span></h2>
+    <p class="section-desc">Real reviews from real customers. Browse them or add your own.</p>
+  </div>
+
+  <div class="rv-carousel-wrap">
+    <div class="rv-carousel-track" id="rvCarouselTrack">
+      <!-- Populated by reviews.js -->
+    </div>
+    <div class="rv-nav">
+      <button class="rv-arrow" onclick="prevCarousel()" aria-label="Previous review">&larr;</button>
+      <div class="rv-dots" id="rvDots"></div>
+      <button class="rv-arrow" onclick="nextCarousel()" aria-label="Next review">&rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Part 2: Infinite positive review scroll strips -->
+<div class="rv-strip-section">
+  <div class="rv-strip-label">&#11088; Positive Reviews &bull; Auto-Scrolling</div>
+  <div class="rv-strip-wrap">
+    <div class="rv-strip" id="rvStrip1"><!-- Populated by reviews.js --></div>
+  </div>
+  <div class="rv-strip-wrap rev">
+    <div class="rv-strip" id="rvStrip2"><!-- Populated by reviews.js --></div>
+  </div>
+</div>
+
+<!-- Part 3: Submit review form -->
+<div class="rv-form-section">
+  <div class="rv-form-wrap reveal">
+    <h3>Leave a Review</h3>
+    <p>Loved (or didn't love) something? Tell us &mdash; your review gets added to the wall instantly.</p>
+
+    <div id="rvSuccess" class="rv-msg">
+      &#9989; Thank you! Your review has been added to the wall.
+    </div>
+    <div id="rvError" class="rv-msg"></div>
+
+    <form id="rvForm" autocomplete="off" novalidate>
+      <input type="hidden" id="ratingVal" name="rating" />
+
+      <!-- Star picker -->
+      <div class="form-group">
+        <label>Your Rating</label>
+        <div class="star-input-row">
+          <!-- stars injected by reviews.js / starsHtml(0, true) shown here statically -->
+          <span class="star-input" data-val="1" title="1 star">&starf;</span>
+          <span class="star-input" data-val="2" title="2 stars">&starf;</span>
+          <span class="star-input" data-val="3" title="3 stars">&starf;</span>
+          <span class="star-input" data-val="4" title="4 stars">&starf;</span>
+          <span class="star-input" data-val="5" title="5 stars">&starf;</span>
+          <span class="star-hint">Tap to rate</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="rvName">Your Name</label>
+        <input type="text" id="rvName" name="name" placeholder="e.g. Rahul M." required maxlength="40" />
+      </div>
+
+      <div class="form-group">
+        <label for="rvText">Your Review</label>
+        <textarea id="rvText" name="text" placeholder="What did you think of the food or experience? (min. 20 chars)" required maxlength="400" style="min-height:110px;"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+        &#128293; Post My Review
+      </button>
+    </form>
+
+    <!-- Stack counter (updates dynamically) -->
+    <div class="rv-stack-info" id="rvStackInfo"></div>
+  </div>
+</div>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <h2>Hungry? <span>Order Now.</span></h2>
+  <p>Order online via Swiggy or Zomato, or call us directly. Available at Sara City, Chakan!</p>
+  <div class="btn-group">
+    <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="btn-swiggy">🛵 Order on Swiggy</a>
+    <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="btn-zomato">🍽 Order on Zomato</a>
+    <a href="tel:7758843586" class="btn-primary">📞 Call Us</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Hell Out Logo" />
+        <div class="nav-logo-text">
+          <span class="brand">Hell Out</span>
+          <span class="tagline">Charcoal Baked Pizza</span>
+        </div>
+      </a>
+      <p>Chakan's most unique cafe experience. Real charcoal. Real flavour. Real fire. Come taste the difference at Sara City, Chakan.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" title="Facebook" aria-label="Facebook">📘</a>
+        <a href="tel:7758843586" class="social-link" title="WhatsApp" aria-label="WhatsApp">💬</a>
+        <a href="https://www.google.com/maps/search/Hell+Out+Cafe+Chakan" class="social-link" title="Google Maps" target="_blank" aria-label="Google Maps">📍</a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">→ Home</a></li>
+        <li><a href="menu.html">→ Our Menu</a></li>
+        <li><a href="about.html">→ About Us</a></li>
+        <li><a href="contact.html">→ Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Menu Highlights -->
+    <div class="footer-col">
+      <h4>Menu Highlights</h4>
+      <ul>
+        <li><a href="menu.html#pizzas">→ Charcoal Pizzas</a></li>
+        <li><a href="menu.html#burgers">→ Burgers</a></li>
+        <li><a href="menu.html#sandwiches">→ Sandwiches</a></li>
+        <li><a href="menu.html#subs">→ Subs</a></li>
+        <li><a href="menu.html#rolls">→ Rolls</a></li>
+        <li><a href="menu.html#drinks">→ Drinks</a></li>
+        <li><a href="menu.html#kullad">→ Kullad Pizza</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <div class="contact-info-item">
+        <span class="ci-icon">📍</span>
+        <p>Kad Bandhu Road, Sara City,<br/>Chakan, Maharashtra</p>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-icon">📞</span>
+        <p><a href="tel:7758843586">+91 77588 43586</a></p>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-icon">⏰</span>
+        <p>Open Daily<br/>11:00 AM – 10:30 PM</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 <span>Hell Out Cafe</span>. All rights reserved. | Chakan, Maharashtra</p>
+    <p>Made with <span>🔥</span> in Chakan</p>
+  </div>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<div class="whatsapp-float">
+  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  <a href="https://wa.me/917758843586?text=Hello%2C%20I%20would%20like%20to%20order%20from%20Hell%20Out%20Cafe!" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="wa-pulse"></span>
+    💬
+  </a>
+</div>
+
+<!-- ===== STICKY MOBILE ORDER BAR ===== -->
+<div class="sticky-order-bar" id="stickyBar">
+  <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="sob-swiggy">🛵 Swiggy</a>
+  <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="sob-zomato">🍽 Zomato</a>
+  <a href="tel:7758843586" class="sob-call">📞</a>
+</div>
+
+<script src="reviews.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

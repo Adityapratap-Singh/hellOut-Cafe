@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Hell Out Cafe | Chakan, Pune</title>
+  <meta name="description" content="Full menu of Hell Out Cafe. Charcoal baked pizzas, burgers, rolls, sandwiches, subs, coffee and cold drinks. Veg and Non-Veg options available." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+
+<div class="page-loader" id="pageLoader">
+  <div class="loader-flames">
+    <div class="loader-flame"></div><div class="loader-flame"></div><div class="loader-flame"></div><div class="loader-flame"></div><div class="loader-flame"></div>
+  </div>
+  <div class="loader-brand">HELL OUT</div>
+  <div class="loader-tagline">Charcoal Baked Pizza &bull; Chakan</div>
+</div>
+<div class="page-transition" id="pageTransition"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar scrolled" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Hell Out Cafe Logo" />
+    <div class="nav-logo-text">
+      <span class="brand">Hell Out</span>
+      <span class="tagline">Charcoal Baked Pizza</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><div class="nav-order-pills">
+      <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="nav-pill-swiggy">🛵 Swiggy</a>
+      <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="nav-pill-zomato">🍽 Zomato</a>
+    </div></li>
+    <li><a href="tel:7758843586" class="nav-cta">📞 Order Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== MENU HERO ===== -->
+<div class="menu-hero">
+  <h1>Our Menu</h1>
+  <p>Every item. Every flavour. Every fire.</p>
+</div>
+
+<!-- ORDER STRIP -->
+<div class="order-strip">
+  <span class="order-strip-label">🔥 Order Online</span>
+  <div class="order-strip-divider"></div>
+  <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="btn-swiggy">🛵 Order on Swiggy</a>
+  <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="btn-zomato">🍽 Order on Zomato</a>
+</div>
+
+<!-- ===== MENU FILTER ===== -->
+<div class="menu-filter-wrap">
+  <div class="menu-filter" id="menuFilter">
+    <button class="filter-btn active" onclick="filterMenu('all', this)" id="filter-all">All Items</button>
+    <button class="filter-btn" onclick="filterMenu('snacks', this)" id="filter-snacks">🍟 Snacks</button>
+    <button class="filter-btn" onclick="filterMenu('sandwiches', this)" id="filter-sandwiches">🥪 Sandwiches</button>
+    <button class="filter-btn" onclick="filterMenu('rolls', this)" id="filter-rolls">🌯 Rolls</button>
+    <button class="filter-btn" onclick="filterMenu('burgers', this)" id="filter-burgers">🍔 Burgers</button>
+    <button class="filter-btn" onclick="filterMenu('pizzas', this)" id="filter-pizzas">🍕 Pizzas</button>
+    <button class="filter-btn" onclick="filterMenu('kullad', this)" id="filter-kullad">🏺 Kullad</button>
+    <button class="filter-btn" onclick="filterMenu('subs', this)" id="filter-subs">🥖 Subs</button>
+    <button class="filter-btn" onclick="filterMenu('kids', this)" id="filter-kids">🧒 Kids</button>
+    <button class="filter-btn" onclick="filterMenu('drinks', this)" id="filter-drinks">🥤 Drinks</button>
+  </div>
+</div>
+
+<!-- ===== MENU CONTENT ===== -->
+<div class="menu-section">
+
+  <!-- SNACKS -->
+  <div class="menu-category" data-category="snacks" id="snacks">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🍟</div>
+      <div class="menu-category-info">
+        <h2>Snacks</h2>
+        <p>Quick bites to kick off your meal</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Plain French Fries</span>
+          <span class="menu-item-price">₹75</span>
+        </div>
+        <p class="menu-item-desc">Crispy golden fries, lightly salted, served hot.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Peri Peri French Fries</span>
+          <span class="menu-item-price">₹80</span>
+        </div>
+        <p class="menu-item-desc">Golden fries dusted with our spicy peri peri seasoning for a fiery kick.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Spicy 🌶</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chilli Cheese Poppers</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Crispy bite-sized poppers filled with melted cheese and chilli kick.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Cheesy</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SANDWICHES -->
+  <div class="menu-category" data-category="sandwiches" id="sandwiches">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🥪</div>
+      <div class="menu-category-info">
+        <h2>Sandwiches</h2>
+        <p>Fresh, loaded, and perfectly pressed</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Vegetable Sandwich</span>
+          <span class="menu-item-price">₹85</span>
+        </div>
+        <p class="menu-item-desc">Mixed veggies with creamy mayo sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Grilled Vegetable Sandwich</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Grilled mixed veggies with mayo sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Grilled</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Paneer Sandwich</span>
+          <span class="menu-item-price">₹95</span>
+        </div>
+        <p class="menu-item-desc">Paneer, green capsicum & onion with mayo.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Grilled Paneer Sandwich</span>
+          <span class="menu-item-price">₹110</span>
+        </div>
+        <p class="menu-item-desc">Grilled paneer, green capsicum & onion with mayo.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Grilled</span></div>
+      </div>
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Cheese &amp; Corn</span>
+          <span class="menu-item-price">₹90</span>
+        </div>
+        <p class="menu-item-desc">Grilled mixed veggies with sweet corn and cheese.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Grilled Cheese &amp; Corn</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Grilled version of mixed veggies with corn and extra cheese.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Grilled</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Grilled Salami Sandwich</span>
+          <span class="menu-item-price">₹120</span>
+        </div>
+        <p class="menu-item-desc">Chicken salami with fresh veggies, grilled to perfection.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span><span class="menu-tag special">Grilled</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chocolate Sandwich</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Toasted sandwich filled with smooth, rich chocolate spread. A dessert treat!</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag kids">Sweet</span></div>
+      </div>
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Cheese Blast Sandwich</span>
+          <span class="menu-item-price">₹130</span>
+        </div>
+        <p class="menu-item-desc">For cheese lovers — an explosion of melted cheese inside every bite.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Chef's Pick</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Tikki Sandwich</span>
+          <span class="menu-item-price">₹50</span>
+        </div>
+        <p class="menu-item-desc">Budget-friendly crispy tikki sandwich. A street food favourite.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROLLS -->
+  <div class="menu-category" data-category="rolls" id="rolls">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🌯</div>
+      <div class="menu-category-info">
+        <h2>Rolls</h2>
+        <p>Packed wraps bursting with flavour</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Veg Delight Roll</span>
+          <span class="menu-item-price">₹90</span>
+        </div>
+        <p class="menu-item-desc">Capsicum, onion, tomato, and signature sauce wrapped in a soft roll.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Paneer Roll</span>
+          <span class="menu-item-price">₹110</span>
+        </div>
+        <p class="menu-item-desc">Paneer, tomato, capsicum with our special sauce — hearty and satisfying.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chicken Roll</span>
+          <span class="menu-item-price">₹150</span>
+        </div>
+        <p class="menu-item-desc">Chicken salami with capsicum, tomato and sauce. Non-veg delight.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span><span class="menu-tag special">Bestseller</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BURGERS -->
+  <div class="menu-category" data-category="burgers" id="burgers">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🍔</div>
+      <div class="menu-category-info">
+        <h2>Burgers</h2>
+        <p>Towering gourmet burgers, veg &amp; non-veg</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Raya Royal (Veg)</span>
+          <span class="menu-item-price">₹95</span>
+        </div>
+        <p class="menu-item-desc">Veg patty, cheese, tomato, pickle, cucumber &amp; burger sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Double Cheese Raya (Veg)</span>
+          <span class="menu-item-price">₹130</span>
+        </div>
+        <p class="menu-item-desc">Double the cheese, double the satisfaction. Veg patty stacked high.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Extra Cheese</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Maha Raja Burger (Veg)</span>
+          <span class="menu-item-price">₹190</span>
+        </div>
+        <p class="menu-item-desc">Our king-size veg burger. Loaded with everything — the ultimate veg indulgence.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">🏆 King Size</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">BBQ Royal (Non-Veg)</span>
+          <span class="menu-item-price">₹110</span>
+        </div>
+        <p class="menu-item-desc">Chicken patty, cheese, tomato, pickle, cucumber &amp; BBQ burger sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Double Cheese BBQ (Non-Veg)</span>
+          <span class="menu-item-price">₹150</span>
+        </div>
+        <p class="menu-item-desc">Double cheese chicken BBQ burger — stacked, smoky, and seriously good.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span><span class="menu-tag special">Extra Cheese</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Maha Raja BBQ (Non-Veg)</span>
+          <span class="menu-item-price">₹250</span>
+        </div>
+        <p class="menu-item-desc">The ultimate non-veg experience. King-size chicken burger like no other.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span><span class="menu-tag special">🔥 Bestseller</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Raya Tikki</span>
+          <span class="menu-item-price">₹70</span>
+        </div>
+        <p class="menu-item-desc">Classic tikki burger — crispy patty with sauce and fresh veggies.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Cheese Raya Tikki</span>
+          <span class="menu-item-price">₹80</span>
+        </div>
+        <p class="menu-item-desc">Tikki burger with extra melted cheese. Budget-friendly perfection.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KIDS MENU -->
+  <div class="menu-category" data-category="kids" id="kids">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🧒</div>
+      <div class="menu-category-info">
+        <h2>Kids Menu</h2>
+        <p>Little bites for our smallest guests</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Smiley Fries</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Round potato fries shaped like smiling faces — kids absolutely love them!</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag kids">Kids Fave</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Kids Pizza (7")</span>
+          <span class="menu-item-price">₹200</span>
+        </div>
+        <p class="menu-item-desc">A mini charcoal pizza with cheese and veggies of choice. Perfect for little ones.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag kids">Kids Special</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chocolate Sandwich</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Toasted sandwich loaded with chocolate. A treat for dessert lovers of all ages.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag kids">Sweet Treat</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chocolate Pizza</span>
+          <span class="menu-item-price">₹300</span>
+        </div>
+        <p class="menu-item-desc">A full pizza base smothered in chocolate. Yes, it's as incredible as it sounds.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Unique!</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KULLAD PIZZA -->
+  <div class="menu-category" data-category="kullad" id="kullad">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🏺</div>
+      <div class="menu-category-info">
+        <h2>Kullad Pizza</h2>
+        <p>Our signature earthen cup pizza — a Hell Out original</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Kullad Pizza</span>
+          <span class="menu-item-price">₹170</span>
+        </div>
+        <p class="menu-item-desc">A unique pizza experience served in a traditional earthen kullad. Creamy, smoky, and unforgettable. Our signature dish!</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">⭐ Signature</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Veg Momo</span>
+          <span class="menu-item-price">₹100</span>
+        </div>
+        <p class="menu-item-desc">Steamed vegetable dumplings — a popular street food pick!</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBS -->
+  <div class="menu-category" data-category="subs" id="subs">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🥖</div>
+      <div class="menu-category-info">
+        <h2>Subs</h2>
+        <p>Homemade sub bread, loaded generously</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Veg Sub</span>
+          <span class="menu-item-price">₹230</span>
+        </div>
+        <p class="menu-item-desc">Homemade sub bread stuffed with fresh vegetables and signature sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Paneer Sub</span>
+          <span class="menu-item-price">₹250</span>
+        </div>
+        <p class="menu-item-desc">Homemade sub bread with paneer, fresh vegetables and our house sauce.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">Popular</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chicken Salami Sub</span>
+          <span class="menu-item-price">₹300</span>
+        </div>
+        <p class="menu-item-desc">Homemade sub bread loaded with chicken salami, fresh veggies &amp; sauce. A full meal.</p>
+        <div class="menu-item-tags"><span class="menu-tag non-veg">Non-Veg</span><span class="menu-tag special">🔥 Must Try</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PIZZAS -->
+  <div class="menu-category" data-category="pizzas" id="pizzas">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🍕</div>
+      <div class="menu-category-info">
+        <h2>Charcoal Baked Pizzas</h2>
+        <p>Slow-baked over real charcoal for that perfect smoky crust</p>
+      </div>
+    </div>
+    <div class="reveal" style="margin-bottom:20px;">
+      <span class="pizza-extra-note">🧀 Extra Cheese Add-On: ₹50</span>
+    </div>
+    <div class="pizza-table-wrap reveal">
+      <table class="pizza-table">
+        <thead>
+          <tr>
+            <th>Pizza</th>
+            <th>Type</th>
+            <th>Small</th>
+            <th>Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Veg Delight</td>
+            <td><span class="menu-tag veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #4CAF50;">Veg</span></td>
+            <td><span class="pizza-price">₹200</span></td>
+            <td><span class="pizza-price">₹300</span></td>
+          </tr>
+          <tr>
+            <td>Grilled Paneer</td>
+            <td><span class="menu-tag veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #4CAF50;">Veg</span></td>
+            <td><span class="pizza-price">₹220</span></td>
+            <td><span class="pizza-price">₹350</span></td>
+          </tr>
+          <tr>
+            <td>Cheese &amp; Corn</td>
+            <td><span class="menu-tag veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #4CAF50;">Veg</span></td>
+            <td><span class="pizza-price">₹200</span></td>
+            <td><span class="pizza-price">₹300</span></td>
+          </tr>
+          <tr>
+            <td>Pineapple Pizza</td>
+            <td><span class="menu-tag veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #4CAF50;">Veg</span></td>
+            <td><span class="pizza-price">₹200</span></td>
+            <td><span class="pizza-price">₹300</span></td>
+          </tr>
+          <tr>
+            <td>Margarita Pizza</td>
+            <td><span class="menu-tag veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #4CAF50;">Veg</span></td>
+            <td><span class="pizza-price">₹200</span></td>
+            <td><span class="pizza-price">₹300</span></td>
+          </tr>
+          <tr>
+            <td>Chicken Salami</td>
+            <td><span class="menu-tag non-veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #E63900;">Non-Veg</span></td>
+            <td><span class="pizza-price">₹250</span></td>
+            <td><span class="pizza-price">₹400</span></td>
+          </tr>
+          <tr>
+            <td>Chicken Sausage</td>
+            <td><span class="menu-tag non-veg" style="font-size:0.65rem;padding:2px 8px;border-radius:100px;border:1px solid #E63900;">Non-Veg</span></td>
+            <td><span class="pizza-price">₹250</span></td>
+            <td><span class="pizza-price">₹400</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="menu-category" data-category="drinks" id="drinks">
+    <div class="menu-category-header reveal">
+      <div class="menu-category-icon">🥤</div>
+      <div class="menu-category-info">
+        <h2>Drinks</h2>
+        <p>Hot coffee, cold coffee, sodas &amp; more</p>
+      </div>
+    </div>
+    <div class="menu-items-grid">
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Cold Coffee</span>
+          <span class="menu-item-price">₹70</span>
+        </div>
+        <p class="menu-item-desc">Chilled, creamy cold coffee — refreshing and rich.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">❄️ Cold</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Hot Coffee</span>
+          <span class="menu-item-price">₹40</span>
+        </div>
+        <p class="menu-item-desc">A warm, comforting cup of freshly brewed hot coffee.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag special">☕ Hot</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Chocolate Milk (85ml)</span>
+          <span class="menu-item-price">₹60</span>
+        </div>
+        <p class="menu-item-desc">Rich chocolate flavoured milk drink — kids and adults love it!</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span><span class="menu-tag kids">Sweet</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-3">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Coke (250ml)</span>
+          <span class="menu-item-price">₹20</span>
+        </div>
+        <p class="menu-item-desc">Ice cold Coca-Cola to refresh yourself.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Sprite (250ml)</span>
+          <span class="menu-item-price">₹20</span>
+        </div>
+        <p class="menu-item-desc">Fizzy, lemony Sprite — light and refreshing.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-1">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Water Bottle (500ml)</span>
+          <span class="menu-item-price">₹10</span>
+        </div>
+        <p class="menu-item-desc">Stay hydrated.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+      <div class="menu-item-card reveal reveal-delay-2">
+        <div class="menu-item-top">
+          <span class="menu-item-name">Water Bottle (1L)</span>
+          <span class="menu-item-price">₹20</span>
+        </div>
+        <p class="menu-item-desc">Large water bottle for the table.</p>
+        <div class="menu-item-tags"><span class="menu-tag veg">Veg</span></div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- end menu-section -->
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Ready to <span>Order?</span></h2>
+  <p>Order online via Swiggy or Zomato, or call us. Visit us at Kad Bandhu Road, Sara City, Chakan.</p>
+  <div class="btn-group">
+    <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="btn-swiggy">🛵 Order on Swiggy</a>
+    <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="btn-zomato">🍽 Order on Zomato</a>
+    <a href="tel:7758843586" class="btn-primary">📞 Call Us</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Hell Out Logo" />
+        <div class="nav-logo-text">
+          <span class="brand">Hell Out</span>
+          <span class="tagline">Charcoal Baked Pizza</span>
+        </div>
+      </a>
+      <p>Chakan's most unique cafe experience. Real charcoal. Real flavour. Real fire.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram">📷</a>
+        <a href="#" class="social-link" title="Facebook">📘</a>
+        <a href="tel:7758843586" class="social-link" title="WhatsApp">💬</a>
+        <a href="https://www.google.com/maps/search/Hell+Out+Cafe+Chakan" class="social-link" target="_blank" title="Google Maps">📍</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">→ Home</a></li>
+        <li><a href="menu.html">→ Our Menu</a></li>
+        <li><a href="about.html">→ About Us</a></li>
+        <li><a href="contact.html">→ Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Menu Sections</h4>
+      <ul>
+        <li><a href="#pizzas">→ Charcoal Pizzas</a></li>
+        <li><a href="#burgers">→ Burgers</a></li>
+        <li><a href="#sandwiches">→ Sandwiches</a></li>
+        <li><a href="#drinks">→ Drinks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Visit Us</h4>
+      <div class="contact-info-item">
+        <span class="ci-icon">📍</span>
+        <p>Kad Bandhu Road, Sara City,<br/>Chakan, Maharashtra</p>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-icon">📞</span>
+        <p><a href="tel:7758843586">+91 77588 43586</a></p>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-icon">⏰</span>
+        <p>Open Daily · 11AM – 10:30PM</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 <span>Hell Out Cafe</span>. All rights reserved.</p>
+    <p>Made with <span>🔥</span> in Chakan</p>
+  </div>
+</footer>
+
+<div class="whatsapp-float">
+  <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+  <a href="https://wa.me/917758843586?text=Hello%2C%20I%20would%20like%20to%20order%20from%20Hell%20Out%20Cafe!" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <span class="wa-pulse"></span>💬
+  </a>
+</div>
+<div class="sticky-order-bar" id="stickyBar">
+  <a href="https://www.swiggy.com/menu/1256969?source=sharing" target="_blank" rel="noopener" class="sob-swiggy">🛵 Swiggy</a>
+  <a href="https://zomato.onelink.me/xqzv/1r7y80zx" target="_blank" rel="noopener" class="sob-zomato">🍽 Zomato</a>
+  <a href="tel:7758843586" class="sob-call">📞</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
